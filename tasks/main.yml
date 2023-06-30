@@ -30,8 +30,8 @@
     ports:
       - "{{ ps3netsrv_port }}:38008"
     env:
-      USER_ID: "{{ USER_ID }}"
-      GROUP_ID: "{{ GROUP_ID }}"
-      TZ: "{{ TZ }}"
+      USER_ID: "{{ ps3netsrv_user_id }}"
+      GROUP_ID: "{{ ps3netsrv_group_id }}"
+      TZ: "{{ ps3netsrv_tz }}"
     restart_policy: unless-stopped
     restart: true
