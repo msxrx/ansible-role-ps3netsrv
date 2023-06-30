@@ -6,10 +6,10 @@ ps3netsrv_data_directory: "~/ps3netsrv"
 ps3netsrv_port: "38008"
 
 # ID of the user the application runs as
-ps3netsrv_user_id: 1000
+ps3netsrv_user_id: "1000"
 
 # Group ID of the user the application runs as
-ps3netsrv_group_id: 1000
+ps3netsrv_group_id: "1000"
 
 # Timezone of the container
 ps3netsrv_tz: "Etc/UTC"
