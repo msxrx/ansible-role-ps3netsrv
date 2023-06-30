@@ -1,0 +1,37 @@
+---
+- name: Create ps3netsrv Directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    mode: "u=rwX,g=rwX,o=rX"
+  with_items:
+    - "{{ ps3netsrv_data_directory }}/GAMES"
+    - "{{ ps3netsrv_data_directory }}/PS3ISO"
+    - "{{ ps3netsrv_data_directory }}/PSXISO"
+    - "{{ ps3netsrv_data_directory }}/PS2ISO"
+    - "{{ ps3netsrv_data_directory }}/PSPISO"
+    - "{{ ps3netsrv_data_directory }}/BDISO"
+    - "{{ ps3netsrv_data_directory }}/DVDISO"
+    - "{{ ps3netsrv_data_directory }}/ROMS"
+    - "{{ ps3netsrv_data_directory }}/GAMEI"
+    - "{{ ps3netsrv_data_directory }}/PKG"
+    - "{{ ps3netsrv_data_directory }}/MOVIES"
+    - "{{ ps3netsrv_data_directory }}/MUSIC"
+    - "{{ ps3netsrv_data_directory }}/PICTURE"
+    - "{{ ps3netsrv_data_directory }}/REDKEY"
+
+- name: ps3netsrv Docker Container
+  docker_container:
+    name: ps3netsrv
+    image: shawly/ps3netsrv:latest
+    pull: true
+    volumes:
+      - "{{ ps3netsrv_data_directory }}:/games:rw"
+    ports:
+      - "{{ ps3netsrv_port }}:38008"
+    env:
+      USER_ID: "{{ USER_ID }}"
+      GROUP_ID: "{{ GROUP_ID }}"
+      TZ: "{{ TZ }}"
+    restart_policy: unless-stopped
+    restart: true

@@ -1,0 +1,15 @@
+---
+# Directory that contains individual folders for each file type
+ps3netsrv_data_directory: "~/ps3netsrv"
+
+# port that ps3netsrv will be available on
+ps3netsrv_port: "38008"
+
+# ID of the user the application runs as.
+USER_ID:	1000
+
+# Group ID of the user the application runs as.
+GROUP_ID: 1000
+
+# Timezone of the container
+TZ: "Etc/UTC"
