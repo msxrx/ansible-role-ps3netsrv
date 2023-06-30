@@ -2,13 +2,13 @@
 
 Ansible Role - ps3netsrv
 
-This role automates provisioning of the (PS3 NET server)[https://github.com/aldostools/webMAN-MOD/wiki/~-PS3-NET-Server]. It is based on the [ps3netsrv docker container](shawly/docker-ps3netsrv), refer to its README for most issues. It creates required directories, sets up the container and starts it.
+This role automates provisioning of the [PS3 NET server](https://github.com/aldostools/webMAN-MOD/wiki/~-PS3-NET-Server). It is based on the [ps3netsrv docker container](shawly/docker-ps3netsrv), refer to its README for most issues. It creates required directories, sets up the container and starts it.
 
 ## What's this? I'm confused
 
 - ps3netsrv is an application that lets you stream content to your PS3
 - Ansible is a project that lets you write automate various tasks like installing software, configuring it, etc.
-- If you simply want to run the server without ansible, you can do so by downloading a ps3netsrv executable and running it yourself. The guide is (here)[https://github.com/aldostools/webMAN-MOD/wiki/~-PS3-NET-Server]
+- If you simply want to run the server without ansible, you can do so by downloading a ps3netsrv executable and running it yourself. The guide is [here](https://github.com/aldostools/webMAN-MOD/wiki/~-PS3-NET-Server)
 
 ## Requirements
 
