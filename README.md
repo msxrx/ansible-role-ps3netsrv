@@ -23,10 +23,10 @@ ps3netsrv_data_directory: "{{ docker_home }}/ps3netsrv"
 # port that ps3netsrv will be available on
 ps3netsrv_port: "38008"
 
-# ID of the user the application runs as.
+# ID of the user the application runs as
 USER_ID: 1000
 
-# Group ID of the user the application runs as.
+# Group ID of the user the application runs as
 GROUP_ID: 1000
 
 # Timezone of the container
