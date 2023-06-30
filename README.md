@@ -42,6 +42,10 @@ TZ: "Etc/UTC"
     - msxrx.ps3netsrv
 ```
 
+## License
+
+GPLv3
+
 ## Sound cool! Where do I learn more about Ansible?
 
 - [Wolfgang's Channel's Ansible Playlist](https://www.youtube.com/watch?v=Z7p9-m4cimg&list=PLkxWXio1KmRoZd88WbrnSnQM5MJY5PjH2)
