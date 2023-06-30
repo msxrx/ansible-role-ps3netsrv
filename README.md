@@ -18,7 +18,7 @@ You'll need docker installed. Using [geerlingguy/ansible-role-docker](geerlinggu
 
 ```yaml
 # Directory that contains individual folders for each file type
-ps3netsrv_data_directory: "{{ docker_home }}/ps3netsrv"
+ps3netsrv_data_directory: "~/ps3netsrv"
 
 # port that ps3netsrv will be available on
 ps3netsrv_port: "38008"
