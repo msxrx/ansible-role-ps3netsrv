@@ -2,7 +2,7 @@
 
 Ansible Role - ps3netsrv
 
-This role automates provisioning of the [PS3 NET server](https://github.com/aldostools/webMAN-MOD/wiki/~-PS3-NET-Server). It is based on the [ps3netsrv docker container](shawly/docker-ps3netsrv), refer to its README for most issues. It creates required directories, sets up the container and starts it.
+This role automates provisioning of the [PS3 NET server](https://github.com/aldostools/webMAN-MOD/wiki/~-PS3-NET-Server). It is based on the [ps3netsrv docker container](https://github.com/shawly/docker-ps3netsrv), refer to its README for most issues. It creates required directories, sets up the container and starts it.
 
 ## What's this? I'm confused
 
